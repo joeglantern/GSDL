@@ -141,11 +141,13 @@ button { font: inherit; color: inherit; background: none; border: none; cursor: 
   object-fit: contain;
 }
 .foot-logo {
-  height: 48px;
+  height: 40px;
   width: auto;
   display: block;
   object-fit: contain;
-  margin-bottom: 16px;
+  margin-bottom: 20px;
+  filter: brightness(0) invert(1);
+  opacity: 0.85;
   opacity: 0.9;
 }
 .brand small {
