@@ -140,6 +140,14 @@ button { font: inherit; color: inherit; background: none; border: none; cursor: 
   display: block;
   object-fit: contain;
 }
+.foot-logo {
+  height: 48px;
+  width: auto;
+  display: block;
+  object-fit: contain;
+  margin-bottom: 16px;
+  opacity: 0.9;
+}
 .brand small {
   font-family: var(--mono);
   font-size: 10px;
