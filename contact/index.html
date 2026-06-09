@@ -1,0 +1,307 @@
+<!doctype html>
+<html lang="en" class="loader-active">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Contact · Global South Development Lab</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Geist:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/src/style.css" />
+</head>
+<body class="loader-active">
+
+<div class="loader" data-loader>
+  <div class="loader-top">
+    <div class="l"><span class="dot"></span><span>GSDL · Issue №26</span></div>
+    <div class="r"><span>MMXXVI · NAIROBI</span></div>
+  </div>
+  <div class="loader-center">
+    <div class="lr-1"><span>Loading</span></div>
+    <div class="lr-2"><span>the field.</span></div>
+    <div class="lr-3">Paper · Ink · Method · Co-creation</div>
+  </div>
+  <div class="loader-bottom">
+    <div class="l"><span data-loader-meta>Compositing types</span></div>
+    <div class="r">
+      <div class="loader-bar"><div class="fill" data-loader-fill></div></div>
+      <div class="loader-counter"><span data-loader-counter>000</span></div>
+    </div>
+  </div>
+</div>
+<script>
+(function(){
+  var ld=document.querySelector('[data-loader]');
+  var ct=document.querySelector('[data-loader-counter]');
+  var fi=document.querySelector('[data-loader-fill]');
+  var mt=document.querySelector('[data-loader-meta]');
+  if(!ld)return;
+  requestAnimationFrame(function(){ld.classList.add('run');});
+  var ph=['Compositing types','Loading the corridor','Aligning the compass','Inking the plates','Pressing the sheet'];
+  var dur=1700,start=Date.now();
+  function tick(){
+    var e=Date.now()-start,t=Math.min(1,e/dur),s=1-Math.pow(1-t,1.6),n=Math.floor(s*100);
+    if(ct)ct.textContent=String(n).padStart(3,'0');
+    if(fi)fi.style.transform='scaleX('+s+')';
+    var i=Math.min(ph.length-1,Math.floor(s*ph.length));
+    if(mt&&mt.textContent!==ph[i])mt.textContent=ph[i];
+    if(t<1){setTimeout(tick,24);}
+    else{
+      setTimeout(function(){ld.classList.add('done');document.documentElement.classList.remove('loader-active');document.body.classList.remove('loader-active');},360);
+      setTimeout(function(){ld.parentNode&&ld.parentNode.removeChild(ld);},1800);
+    }
+  }
+  setTimeout(tick,60);
+})();
+</script>
+
+<!-- NAV -->
+<nav class="nav">
+  <div class="nav-inner">
+    <a class="brand" href="/">
+      <svg class="brand-mark" viewBox="0 0 32 32" aria-hidden="true">
+        <circle cx="16" cy="16" r="14" fill="none" stroke="#1a1612" stroke-width="1.2"/>
+        <circle cx="16" cy="16" r="6" fill="#b4432a"/>
+        <line x1="16" y1="2" x2="16" y2="30" stroke="#1a1612" stroke-width="1"/>
+        <line x1="2" y1="16" x2="30" y2="16" stroke="#1a1612" stroke-width="1"/>
+      </svg>
+      <span class="brand-name">GSDL<small>Global South Lab</small></span>
+    </a>
+    <div class="nav-links">
+      <a href="/mission">Mission</a>
+      <a href="/approach">Approach</a>
+      <a href="/services">Services</a>
+      <a href="/work">Work</a>
+      <a href="/contact">Contact</a>
+    </div>
+    <a class="nav-cta" href="/contact">Start a project →</a>
+    <button class="nav-toggle" aria-label="Menu"><span></span><span></span></button>
+  </div>
+</nav>
+<div class="nav-drawer">
+  <a href="/mission"><span>Mission</span><span class="num">01</span></a>
+  <a href="/approach"><span>Approach</span><span class="num">02</span></a>
+  <a href="/services"><span>Services</span><span class="num">03</span></a>
+  <a href="/work"><span>Work</span><span class="num">04</span></a>
+  <a href="/contact"><span>Contact</span><span class="num">05</span></a>
+</div>
+
+<!-- PAGE HEAD -->
+<section class="page-head">
+  <div class="back-num parallax" data-parallax="0.2" aria-hidden="true">05</div>
+  <div class="wrap">
+    <div class="crumb reveal">
+      <span class="dot"></span>
+      <span class="mono">Section 05 · Start a project · Open enquiries</span>
+    </div>
+    <h1 class="head-title reveal">
+      Tell us<br/>
+      what's <em>at stake.</em>
+    </h1>
+    <p class="reveal delay-1" style="max-width:680px; font-size:19px; line-height:1.6;">
+      Whether you're scoping an evaluation, redesigning a programme, or starting from a blank brief · write to us. We'll come back within two working days, with a real human, in plain language.
+    </p>
+  </div>
+</section>
+
+<!-- CONTACT GRID -->
+<section>
+  <div class="wrap">
+    <div class="contact-grid">
+      <!-- LEFT: info -->
+      <div class="reveal">
+        <div class="info-block">
+          <h4>The studio</h4>
+          <div class="v">
+            Uganda House, 3rd Floor,<br/>
+            <em>Suite 12 ·</em><br/>
+            Nairobi, Kenya.
+          </div>
+        </div>
+        <div class="info-block">
+          <h4>Write</h4>
+          <div class="v"><a href="mailto:[studio email]">[studio email]</a></div>
+          <p>For new engagements, partnerships and curious questions.</p>
+        </div>
+        <div class="info-block">
+          <h4>Call</h4>
+          <div class="v"><a href="tel:">+254 · 0 000 000 0</a></div>
+          <p>Mon · Fri · 09:00–17:00 EAT</p>
+        </div>
+        <div class="info-block">
+          <h4>Press &amp; speaking</h4>
+          <div class="v"><a href="mailto:[press email]">[press email]</a></div>
+        </div>
+      </div>
+
+      <!-- RIGHT: form -->
+      <div class="reveal delay-1">
+        <div class="form-card">
+          <h3>Send a <em>brief.</em></h3>
+          <p class="sub">A few lines is enough · we'll write back to schedule a proper conversation.</p>
+
+          <form id="briefForm" novalidate>
+            <div class="field-row">
+              <div class="field">
+                <label>Your name <span class="req">*</span></label>
+                <input name="name" required placeholder="Wangari Mwangi" />
+              </div>
+              <div class="field">
+                <label>Email <span class="req">*</span></label>
+                <input name="email" type="email" required placeholder="you@org.org" />
+              </div>
+            </div>
+
+            <div class="field-row">
+              <div class="field">
+                <label>Organisation</label>
+                <input name="org" placeholder="Where you write from" />
+              </div>
+              <div class="field">
+                <label>Country / Region</label>
+                <input name="geo" placeholder="Nairobi, KE" />
+              </div>
+            </div>
+
+            <div class="field">
+              <label>Scope of interest</label>
+              <div class="scope-chips">
+                <input type="checkbox" id="s1" name="scope" value="orgdev"/><label for="s1">Org Dev</label>
+                <input type="checkbox" id="s2" name="scope" value="merl"/><label for="s2">MERL</label>
+                <input type="checkbox" id="s3" name="scope" value="training"/><label for="s3">Trainings</label>
+                <input type="checkbox" id="s4" name="scope" value="policy"/><label for="s4">Policy</label>
+                <input type="checkbox" id="s5" name="scope" value="research"/><label for="s5">Research</label>
+                <input type="checkbox" id="s6" name="scope" value="other"/><label for="s6">Other</label>
+              </div>
+            </div>
+
+            <div class="field">
+              <label>Tell us about the brief <span class="req">*</span></label>
+              <textarea name="brief" required placeholder="What are you trying to change? What's the situation?"></textarea>
+            </div>
+
+            <div class="form-actions">
+              <button class="btn solid" type="submit">Send brief →</button>
+              <span class="ok-msg">↳ Received · we'll respond within 2 days.</span>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- COORDS / DARK -->
+<section class="coords">
+  <div class="coords-inner">
+    <div class="reveal">
+      <div class="eyebrow" style="color:var(--ochre); margin-bottom:14px;">§ Coordinates</div>
+      <h2>Find us<br/>on the <em>map</em>.</h2>
+      <p style="opacity:0.85; font-size:17px; line-height:1.6; max-width:480px;">
+        We work across the East African corridor and travel widely · but the studio is anchored in Nairobi, where most conversations begin.
+      </p>
+    </div>
+    <div class="row-list reveal delay-1">
+      <div class="row">
+        <div class="k">Latitude</div>
+        <div class="v">−1° 17′ 11″ S</div>
+      </div>
+      <div class="row">
+        <div class="k">Longitude</div>
+        <div class="v">36° 49′ 02″ E</div>
+      </div>
+      <div class="row">
+        <div class="k">Timezone</div>
+        <div class="v">EAT · UTC +03:00</div>
+      </div>
+      <div class="row">
+        <div class="k">Working languages</div>
+        <div class="v">English · Kiswahili · French</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CLOSER -->
+<section class="closer">
+  <div class="wrap">
+    <svg width="140" height="140" viewBox="0 0 140 140" style="margin-bottom: 28px;" aria-hidden="true">
+      <g class="anim-spin-slow" style="transform-origin: 70px 70px;">
+        <circle cx="70" cy="70" r="60" fill="none" stroke="#1a1612" stroke-width="0.8" stroke-dasharray="2 6"/>
+      </g>
+      <g class="anim-spin-rev" style="transform-origin: 70px 70px; animation-duration: 40s;">
+        <circle cx="70" cy="70" r="48" fill="none" stroke="#1a1612" stroke-width="0.8"/>
+        <circle cx="70" cy="22" r="3" fill="#b4432a"/>
+      </g>
+      <g class="anim-pulse-slow" style="transform-origin: 70px 70px;">
+        <circle cx="70" cy="70" r="24" fill="#b4432a"/>
+      </g>
+      <text x="70" y="76" text-anchor="middle" font-family="Instrument Serif, serif" font-style="italic" font-size="22" fill="#efe7d6">+</text>
+      <g class="anim-spin" style="transform-origin: 70px 70px; animation-duration: 18s;">
+        <circle cx="70" cy="14" r="4" fill="#1d4736"/>
+        <circle cx="126" cy="70" r="3" fill="#c08b3a"/>
+      </g>
+    </svg>
+    <h2 class="reveal">
+      What if the<br/>
+      <em>brief</em> you write today<br/>
+      becomes the policy<br/>
+      ten years from now?
+    </h2>
+    <p class="reveal delay-1">That's not a slogan. It's the bet we make on every engagement. Tell us what you're trying to move · we'll bring the rigour, the partners and the patience to move it together.</p>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="foot">
+  <div class="foot-inner">
+    <div class="foot-display reveal">
+      Let's <em>co-create</em><br/>
+      what comes next.
+    </div>
+    <div class="foot-grid">
+      <div>
+        <h5>The Lab</h5>
+        <p>Global South Development Lab<br/>strategic consulting for transformational development across the global south.</p>
+        <p style="margin-top:16px; opacity:0.7;">Uganda House, 3rd Floor, Suite 12<br/>Nairobi, Kenya</p>
+      </div>
+      <div>
+        <h5>Sitemap</h5>
+        <a href="/mission">Mission &amp; values</a>
+        <a href="/approach">Our approach</a>
+        <a href="/services">Services</a>
+        <a href="/work">Selected work</a>
+        <a href="/contact">Contact</a>
+      </div>
+      <div>
+        <h5>Practices</h5>
+        <a href="/services#org">Organisational dev</a>
+        <a href="/services#merl">MERL</a>
+        <a href="/services#training">Trainings</a>
+      </div>
+      <div>
+        <h5>Reach us</h5>
+        <a href="mailto:[studio email]">[studio email]</a>
+        <a href="tel:">[Phone number]</a>
+        <a href="/contact">Start a project →</a>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2026 GSDL · All rights reserved</span>
+      <span>Made in Nairobi · For the 17 Goals</span>
+      <span>v.5 · Issue 26</span>
+    </div>
+  </div>
+</footer>
+
+<script type="module" src="/src/main.js"></script>
+<script type="module">
+  document.getElementById('briefForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+    if (!this.checkValidity()) { this.reportValidity(); return; }
+    document.querySelector('.form-actions').classList.add('sent');
+    setTimeout(() => this.reset(), 400);
+  });
+</script>
+</body>
+</html>

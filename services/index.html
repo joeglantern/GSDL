@@ -1,0 +1,395 @@
+<!doctype html>
+<html lang="en" class="loader-active">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Services · Global South Development Lab</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Geist:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/src/style.css" />
+</head>
+<body class="loader-active">
+
+<div class="loader" data-loader>
+  <div class="loader-top">
+    <div class="l"><span class="dot"></span><span>GSDL · Issue №26</span></div>
+    <div class="r"><span>MMXXVI · NAIROBI</span></div>
+  </div>
+  <div class="loader-center">
+    <div class="lr-1"><span>Loading</span></div>
+    <div class="lr-2"><span>the field.</span></div>
+    <div class="lr-3">Paper · Ink · Method · Co-creation</div>
+  </div>
+  <div class="loader-bottom">
+    <div class="l"><span data-loader-meta>Compositing types</span></div>
+    <div class="r">
+      <div class="loader-bar"><div class="fill" data-loader-fill></div></div>
+      <div class="loader-counter"><span data-loader-counter>000</span></div>
+    </div>
+  </div>
+</div>
+<script>
+(function(){
+  var ld=document.querySelector('[data-loader]');
+  var ct=document.querySelector('[data-loader-counter]');
+  var fi=document.querySelector('[data-loader-fill]');
+  var mt=document.querySelector('[data-loader-meta]');
+  if(!ld)return;
+  requestAnimationFrame(function(){ld.classList.add('run');});
+  var ph=['Compositing types','Loading the corridor','Aligning the compass','Inking the plates','Pressing the sheet'];
+  var dur=1700,start=Date.now();
+  function tick(){
+    var e=Date.now()-start,t=Math.min(1,e/dur),s=1-Math.pow(1-t,1.6),n=Math.floor(s*100);
+    if(ct)ct.textContent=String(n).padStart(3,'0');
+    if(fi)fi.style.transform='scaleX('+s+')';
+    var i=Math.min(ph.length-1,Math.floor(s*ph.length));
+    if(mt&&mt.textContent!==ph[i])mt.textContent=ph[i];
+    if(t<1){setTimeout(tick,24);}
+    else{
+      setTimeout(function(){ld.classList.add('done');document.documentElement.classList.remove('loader-active');document.body.classList.remove('loader-active');},360);
+      setTimeout(function(){ld.parentNode&&ld.parentNode.removeChild(ld);},1800);
+    }
+  }
+  setTimeout(tick,60);
+})();
+</script>
+
+<!-- NAV -->
+<nav class="nav">
+  <div class="nav-inner">
+    <a class="brand" href="/">
+      <svg class="brand-mark" viewBox="0 0 32 32" aria-hidden="true">
+        <circle cx="16" cy="16" r="14" fill="none" stroke="#1a1612" stroke-width="1.2"/>
+        <circle cx="16" cy="16" r="6" fill="#b4432a"/>
+        <line x1="16" y1="2" x2="16" y2="30" stroke="#1a1612" stroke-width="1"/>
+        <line x1="2" y1="16" x2="30" y2="16" stroke="#1a1612" stroke-width="1"/>
+      </svg>
+      <span class="brand-name">GSDL<small>Global South Lab</small></span>
+    </a>
+    <div class="nav-links">
+      <a href="/mission">Mission</a>
+      <a href="/approach">Approach</a>
+      <a href="/services">Services</a>
+      <a href="/work">Work</a>
+      <a href="/contact">Contact</a>
+    </div>
+    <a class="nav-cta" href="/contact">Start a project →</a>
+    <button class="nav-toggle" aria-label="Menu"><span></span><span></span></button>
+  </div>
+</nav>
+<div class="nav-drawer">
+  <a href="/mission"><span>Mission</span><span class="num">01</span></a>
+  <a href="/approach"><span>Approach</span><span class="num">02</span></a>
+  <a href="/services"><span>Services</span><span class="num">03</span></a>
+  <a href="/work"><span>Work</span><span class="num">04</span></a>
+  <a href="/contact"><span>Contact</span><span class="num">05</span></a>
+</div>
+
+<!-- PAGE HEAD -->
+<section class="page-head">
+  <div class="back-num parallax" data-parallax="0.18" aria-hidden="true">03</div>
+  <div class="wrap">
+    <div class="crumb reveal">
+      <span class="dot"></span>
+      <span class="mono">Section 03 · Services index</span>
+    </div>
+    <h1 class="head-title reveal">
+      Three <em>practices</em>,<br/>
+      one method.
+    </h1>
+    <p class="reveal delay-1" style="max-width:680px; font-size:19px; line-height:1.6;">
+      The work falls into three doors: building the organisations, measuring what works, and growing the people who run it all. Browse the index · or scroll the full catalogue below.
+    </p>
+
+    <div class="svc-index reveal delay-2">
+      <a class="svc-idx-row" href="#org">
+        <span class="n">№ 01</span>
+        <span>Organisational <em>Development</em></span>
+        <span class="meta">Strategy · Policy · Capacity</span>
+      </a>
+      <a class="svc-idx-row" href="#merl">
+        <span class="n">№ 02</span>
+        <span>Monitoring &amp; <em>Evaluation</em></span>
+        <span class="meta">MEL · Research · Reporting</span>
+      </a>
+      <a class="svc-idx-row" href="#training">
+        <span class="n">№ 03</span>
+        <span><em>Trainings</em> &amp; capacity</span>
+        <span class="meta">Workshops · Curricula · Coaching</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- Ribbon -->
+<div class="ribbon" aria-hidden="true">
+  <div class="ribbon-track">
+    <span>
+      Capacity <span class="ribbon-star"></span> Strategy <span class="ribbon-star"></span>
+      Policy <span class="ribbon-star"></span> Frameworks <span class="ribbon-star"></span>
+      Theory of Change <span class="ribbon-star"></span> Evaluation <span class="ribbon-star"></span>
+      Coaching <span class="ribbon-star"></span> Workshops <span class="ribbon-star"></span>
+    </span>
+    <span>
+      Capacity <span class="ribbon-star"></span> Strategy <span class="ribbon-star"></span>
+      Policy <span class="ribbon-star"></span> Frameworks <span class="ribbon-star"></span>
+      Theory of Change <span class="ribbon-star"></span> Evaluation <span class="ribbon-star"></span>
+      Coaching <span class="ribbon-star"></span> Workshops <span class="ribbon-star"></span>
+    </span>
+  </div>
+</div>
+
+<!-- ORG DEV -->
+<section class="svc-section" id="org">
+  <div class="wrap">
+    <div class="svc-top reveal">
+      <div class="n-big">01</div>
+      <h2>Organisational<br/><em>Development.</em></h2>
+    </div>
+    <div class="svc-grid">
+      <div class="reveal">
+        <p class="lead">Organizational Capacity Development (OCA) and the subsequent strengthening of organisations through open and bespoke <em>Capacity Improvement plans</em> around prioritised themes.</p>
+        <p style="margin-top:24px; opacity:0.78; font-size:15px; line-height:1.6;">
+          Governance · Human Resource · Resource Mobilisation · Sustainability · Project Planning &amp; Management · Monitoring &amp; Evaluation · Alliance building &amp; partnership management.
+        </p>
+      </div>
+      <ul class="svc-bullets reveal delay-1">
+        <li>
+          <span class="k">01.a</span>
+          <span><strong>Capacity Improvement plans</strong>Developed end-to-end, with support in implementation, monitoring and re-evaluation.</span>
+        </li>
+        <li>
+          <span class="k">01.b</span>
+          <span><strong>Strategic plans &amp; policy</strong>Organizational strategic plans, policies, operational manuals, frameworks and business plans.</span>
+        </li>
+        <li>
+          <span class="k">01.c</span>
+          <span><strong>Human Resource management</strong>From systems and structures to performance and people review.</span>
+        </li>
+        <li>
+          <span class="k">01.d</span>
+          <span><strong>Change management</strong>Navigate transitions · leadership, structure, strategy · without losing the thread.</span>
+        </li>
+        <li>
+          <span class="k">01.e</span>
+          <span><strong>Policy &amp; strategy development</strong>From insight to instrument · turn evidence into adoptable policy.</span>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- INTERLUDE · Plates -->
+<section style="padding: 60px 0; position: relative; background: var(--paper);">
+  <div class="wrap">
+    <div style="display:grid; grid-template-columns: 1fr 1fr 1fr; gap: 24px; align-items: stretch;">
+      <div class="img-plate" style="aspect-ratio: 1/1;">
+        <div class="img-handle">PL. № 04</div>
+        <svg viewBox="0 0 400 400" preserveAspectRatio="xMidYMid slice" style="position:absolute; inset:0; width:100%; height:100%; z-index:1;" aria-hidden="true">
+          <rect x="40" y="40" width="320" height="320" fill="#b4432a"/>
+          <g transform="translate(200 200)">
+            <g class="anim-spin-rev" style="transform-origin: 0 0; animation-duration: 50s;">
+              <circle r="120" fill="none" stroke="#efe7d6" stroke-width="1"/>
+            </g>
+            <g class="anim-pulse-slow" style="transform-origin: 0 0;">
+              <circle r="80" fill="#efe7d6"/>
+            </g>
+            <circle r="36" fill="#1a1612"/>
+            <text y="6" text-anchor="middle" font-family="Instrument Serif, serif" font-style="italic" font-size="22" fill="#efe7d6">OD</text>
+          </g>
+          <g font-family="JetBrains Mono, monospace" font-size="9" fill="#efe7d6" letter-spacing="1.5">
+            <text x="52" y="62">FIG. v · ORG DEV</text>
+          </g>
+        </svg>
+        <div class="img-cap">
+          <span class="l">Capacity</span>
+          <span class="r">Plate iv</span>
+        </div>
+      </div>
+      <div class="img-plate" style="aspect-ratio: 1/1; background: var(--ink);">
+        <div class="img-handle" style="background: var(--bone);">PL. № 05</div>
+        <svg viewBox="0 0 400 400" preserveAspectRatio="xMidYMid slice" style="position:absolute; inset:0; width:100%; height:100%; z-index:1;" aria-hidden="true">
+          <rect width="400" height="400" fill="#1a1612"/>
+          <g>
+            <rect x="60" y="240" width="40" height="120" fill="#c08b3a" class="anim-pulse" style="transform-origin: 80px 300px; animation-duration: 3.6s;"/>
+            <rect x="120" y="180" width="40" height="180" fill="#efe7d6" class="anim-pulse" style="transform-origin: 140px 270px; animation-delay: .3s; animation-duration: 3.6s;"/>
+            <rect x="180" y="120" width="40" height="240" fill="#b4432a" class="anim-pulse" style="transform-origin: 200px 240px; animation-delay: .6s; animation-duration: 3.6s;"/>
+            <rect x="240" y="200" width="40" height="160" fill="#1d4736" class="anim-pulse" style="transform-origin: 260px 280px; animation-delay: .9s; animation-duration: 3.6s;"/>
+            <rect x="300" y="160" width="40" height="200" fill="#c08b3a" class="anim-pulse" style="transform-origin: 320px 260px; animation-delay: 1.2s; animation-duration: 3.6s;"/>
+          </g>
+          <line x1="40" y1="360" x2="360" y2="360" stroke="#efe7d6" stroke-width="1.2"/>
+          <g font-family="JetBrains Mono, monospace" font-size="9" fill="#efe7d6" letter-spacing="1.5">
+            <text x="52" y="62">FIG. vi · MERL</text>
+          </g>
+        </svg>
+        <div class="img-cap">
+          <span class="l" style="background: var(--bone);">Measure</span>
+          <span class="r">Plate v</span>
+        </div>
+      </div>
+      <div class="img-plate" style="aspect-ratio: 1/1; background: var(--forest);">
+        <div class="img-handle">PL. № 06</div>
+        <svg viewBox="0 0 400 400" preserveAspectRatio="xMidYMid slice" style="position:absolute; inset:0; width:100%; height:100%; z-index:1;" aria-hidden="true">
+          <rect width="400" height="400" fill="#1d4736"/>
+          <g>
+            <g class="anim-pulse" style="transform-origin: 120px 180px; animation-duration: 3.4s;"><circle cx="120" cy="180" r="50" fill="#c08b3a"/></g>
+            <g class="anim-pulse" style="transform-origin: 200px 220px; animation-delay: .25s; animation-duration: 3.4s;"><circle cx="200" cy="220" r="50" fill="#efe7d6"/></g>
+            <g class="anim-pulse" style="transform-origin: 280px 180px; animation-delay: .5s; animation-duration: 3.4s;"><circle cx="280" cy="180" r="50" fill="#b4432a"/></g>
+            <g class="anim-pulse" style="transform-origin: 160px 270px; animation-delay: .75s; animation-duration: 3.4s;"><circle cx="160" cy="270" r="50" fill="#efe7d6"/></g>
+            <g class="anim-pulse" style="transform-origin: 240px 270px; animation-delay: 1s; animation-duration: 3.4s;"><circle cx="240" cy="270" r="50" fill="#c08b3a"/></g>
+          </g>
+          <g font-family="JetBrains Mono, monospace" font-size="9" fill="#efe7d6" letter-spacing="1.5">
+            <text x="52" y="62">FIG. vii · TRAININGS</text>
+          </g>
+        </svg>
+        <div class="img-cap">
+          <span class="l">Cohorts</span>
+          <span class="r">Plate vi</span>
+        </div>
+      </div>
+    </div>
+    <p class="serif" style="margin-top: 32px; font-size: clamp(18px, 2vw, 26px); line-height: 1.4; font-style: italic; max-width: 740px; opacity: 0.85;">
+      Three plates · three practices · pressed by the same hand, in the same room.
+    </p>
+  </div>
+</section>
+
+<!-- MERL -->
+<section class="svc-section" id="merl" style="background:var(--ink); color:var(--bone); border-color: var(--ink);">
+  <div class="wrap">
+    <div class="svc-top reveal">
+      <div class="n-big" style="color:var(--ochre);">02</div>
+      <h2>Monitoring, <em style="color:var(--ochre);">Evaluation,</em><br/>Research &amp; Learning.</h2>
+    </div>
+    <div class="svc-grid">
+      <div class="reveal">
+        <p class="lead">A practice for organisations that want to know · not <em>guess</em> · what works. We instrument programmes so they can learn in motion.</p>
+        <p style="margin-top:24px; opacity:0.78; font-size:15px; line-height:1.6;">
+          Theory of Change · Logical Frameworks · Baselines · Midlines · Endlines · Operations Research · Reporting.
+        </p>
+      </div>
+      <ul class="svc-bullets reveal delay-1" style="border-color:rgba(246,240,225,0.25);">
+        <li style="border-color:rgba(246,240,225,0.25);">
+          <span class="k">02.a</span>
+          <span><strong>MEL frameworks</strong>Development of Monitoring, Evaluation and Learning frameworks tailored to programme scope and stakeholder needs.</span>
+        </li>
+        <li style="border-color:rgba(246,240,225,0.25);">
+          <span class="k">02.b</span>
+          <span><strong>ToC capacity</strong>Building organizational capacity on Theory of Change based project evaluations and reporting.</span>
+        </li>
+        <li style="border-color:rgba(246,240,225,0.25);">
+          <span class="k">02.c</span>
+          <span><strong>Project Evaluations</strong>Baseline, Midline and Endline · across sectors and contexts.</span>
+        </li>
+        <li style="border-color:rgba(246,240,225,0.25);">
+          <span class="k">02.d</span>
+          <span><strong>Operations Research</strong>Structured inquiry on what's actually happening in implementation · and what to change next.</span>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- TRAININGS -->
+<section class="svc-section" id="training">
+  <div class="wrap">
+    <div class="svc-top reveal">
+      <div class="n-big">03</div>
+      <h2><em>Trainings</em><br/>&amp; capacity building.</h2>
+    </div>
+    <p class="reveal delay-1" style="font-family:var(--serif); font-size:clamp(22px, 2.4vw, 32px); line-height:1.25; letter-spacing:-0.01em; max-width:880px; margin-bottom:56px;">
+      Open and bespoke programmes for teams running real projects. Cohorts of 6–60, in-person and remote. Curricula travel; learning sticks.
+    </p>
+
+    <div class="tag-grid reveal delay-2">
+      <div class="tag">
+        <span class="tnum">№ 01</span>
+        <h4>Resource Mobilization, <em>Proposal writing</em> &amp; fundraising</h4>
+      </div>
+      <div class="tag">
+        <span class="tnum">№ 02</span>
+        <h4>Strategic planning &amp; <em>Resource Management</em></h4>
+      </div>
+      <div class="tag">
+        <span class="tnum">№ 03</span>
+        <h4>Entrepreneurship, <em>Business Planning</em> &amp; Development</h4>
+      </div>
+      <div class="tag">
+        <span class="tnum">№ 04</span>
+        <h4>Project Cycle &amp; <em>Results-Based</em> Management</h4>
+      </div>
+      <div class="tag">
+        <span class="tnum">№ 05</span>
+        <h4><em>Theory of Change</em> &amp; Log-Frame Programming</h4>
+      </div>
+      <div class="tag">
+        <span class="tnum">№ 06</span>
+        <h4><em>Gender-Responsive</em> Budgeting</h4>
+      </div>
+      <div class="tag">
+        <span class="tnum">№ 07</span>
+        <h4>Gender-based Development &amp; <em>Programming</em></h4>
+      </div>
+      <div class="tag">
+        <span class="tnum">№ 08</span>
+        <h4><em>Corporate Governance</em> &amp; Management</h4>
+      </div>
+      <div class="tag">
+        <span class="tnum">№ 09</span>
+        <h4>Organizational <em>Quality Planning</em> &amp; Risk Management</h4>
+      </div>
+    </div>
+
+    <div style="margin-top:64px; display:flex; gap:16px; flex-wrap:wrap; align-items:center;" class="reveal delay-3">
+      <a class="btn terra" href="/contact">Commission a training →</a>
+      <a class="btn" href="/work">See past engagements</a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="foot">
+  <div class="foot-inner">
+    <div class="foot-display reveal">
+      Let's <em>co-create</em><br/>
+      what comes next.
+    </div>
+    <div class="foot-grid">
+      <div>
+        <h5>The Lab</h5>
+        <p>Global South Development Lab<br/>strategic consulting for transformational development across the global south.</p>
+        <p style="margin-top:16px; opacity:0.7;">Uganda House, 3rd Floor, Suite 12<br/>Nairobi, Kenya</p>
+      </div>
+      <div>
+        <h5>Sitemap</h5>
+        <a href="/mission">Mission &amp; values</a>
+        <a href="/approach">Our approach</a>
+        <a href="/services">Services</a>
+        <a href="/work">Selected work</a>
+        <a href="/contact">Contact</a>
+      </div>
+      <div>
+        <h5>Practices</h5>
+        <a href="/services#org">Organisational dev</a>
+        <a href="/services#merl">MERL</a>
+        <a href="/services#training">Trainings</a>
+      </div>
+      <div>
+        <h5>Reach us</h5>
+        <a href="mailto:[studio email]">[studio email]</a>
+        <a href="tel:">[Phone number]</a>
+        <a href="/contact">Start a project →</a>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2026 GSDL · All rights reserved</span>
+      <span>Made in Nairobi · For the 17 Goals</span>
+      <span>v.5 · Issue 26</span>
+    </div>
+  </div>
+</footer>
+
+<script type="module" src="/src/main.js"></script>
+</body>
+</html>

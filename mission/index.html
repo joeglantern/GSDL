@@ -1,0 +1,280 @@
+<!doctype html>
+<html lang="en" class="loader-active">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Mission · Vision · Values · Global South Development Lab</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Geist:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/src/style.css" />
+</head>
+<body class="loader-active">
+
+<div class="loader" data-loader>
+  <div class="loader-top">
+    <div class="l"><span class="dot"></span><span>GSDL · Issue №26</span></div>
+    <div class="r"><span>MMXXVI · NAIROBI</span></div>
+  </div>
+  <div class="loader-center">
+    <div class="lr-1"><span>Loading</span></div>
+    <div class="lr-2"><span>the field.</span></div>
+    <div class="lr-3">Paper · Ink · Method · Co-creation</div>
+  </div>
+  <div class="loader-bottom">
+    <div class="l"><span data-loader-meta>Compositing types</span></div>
+    <div class="r">
+      <div class="loader-bar"><div class="fill" data-loader-fill></div></div>
+      <div class="loader-counter"><span data-loader-counter>000</span></div>
+    </div>
+  </div>
+</div>
+<script>
+(function(){
+  var ld=document.querySelector('[data-loader]');
+  var ct=document.querySelector('[data-loader-counter]');
+  var fi=document.querySelector('[data-loader-fill]');
+  var mt=document.querySelector('[data-loader-meta]');
+  if(!ld)return;
+  requestAnimationFrame(function(){ld.classList.add('run');});
+  var ph=['Compositing types','Loading the corridor','Aligning the compass','Inking the plates','Pressing the sheet'];
+  var dur=1700,start=Date.now();
+  function tick(){
+    var e=Date.now()-start,t=Math.min(1,e/dur),s=1-Math.pow(1-t,1.6),n=Math.floor(s*100);
+    if(ct)ct.textContent=String(n).padStart(3,'0');
+    if(fi)fi.style.transform='scaleX('+s+')';
+    var i=Math.min(ph.length-1,Math.floor(s*ph.length));
+    if(mt&&mt.textContent!==ph[i])mt.textContent=ph[i];
+    if(t<1){setTimeout(tick,24);}
+    else{
+      setTimeout(function(){ld.classList.add('done');document.documentElement.classList.remove('loader-active');document.body.classList.remove('loader-active');},360);
+      setTimeout(function(){ld.parentNode&&ld.parentNode.removeChild(ld);},1800);
+    }
+  }
+  setTimeout(tick,60);
+})();
+</script>
+
+<!-- NAV -->
+<nav class="nav">
+  <div class="nav-inner">
+    <a class="brand" href="/">
+      <svg class="brand-mark" viewBox="0 0 32 32" aria-hidden="true">
+        <circle cx="16" cy="16" r="14" fill="none" stroke="#1a1612" stroke-width="1.2"/>
+        <circle cx="16" cy="16" r="6" fill="#b4432a"/>
+        <line x1="16" y1="2" x2="16" y2="30" stroke="#1a1612" stroke-width="1"/>
+        <line x1="2" y1="16" x2="30" y2="16" stroke="#1a1612" stroke-width="1"/>
+      </svg>
+      <span class="brand-name">GSDL<small>Global South Lab</small></span>
+    </a>
+    <div class="nav-links">
+      <a href="/mission">Mission</a>
+      <a href="/approach">Approach</a>
+      <a href="/services">Services</a>
+      <a href="/work">Work</a>
+      <a href="/contact">Contact</a>
+    </div>
+    <a class="nav-cta" href="/contact">Start a project →</a>
+    <button class="nav-toggle" aria-label="Menu"><span></span><span></span></button>
+  </div>
+</nav>
+<div class="nav-drawer">
+  <a href="/mission"><span>Mission</span><span class="num">01</span></a>
+  <a href="/approach"><span>Approach</span><span class="num">02</span></a>
+  <a href="/services"><span>Services</span><span class="num">03</span></a>
+  <a href="/work"><span>Work</span><span class="num">04</span></a>
+  <a href="/contact"><span>Contact</span><span class="num">05</span></a>
+</div>
+
+<!-- PAGE HEAD -->
+<section class="page-head">
+  <div class="back-num parallax" data-parallax="0.2" aria-hidden="true">01</div>
+  <div class="wrap">
+    <div class="crumb reveal">
+      <span class="dot"></span>
+      <span class="mono">Section 01 · Mission · Vision · Values</span>
+    </div>
+    <h1 class="head-title reveal">
+      What we<br/>
+      <em>stand for.</em>
+    </h1>
+    <p class="reveal delay-1" style="max-width:640px; font-size:19px; line-height:1.6;">
+      A consultancy with a movement's posture. Three statements anchor everything we do · mission, vision, values · and they're written here without spin.
+    </p>
+  </div>
+</section>
+
+<!-- Ribbon -->
+<div class="ribbon" aria-hidden="true">
+  <div class="ribbon-track">
+    <span>
+      Mission <span class="ribbon-star"></span>
+      Vision <span class="ribbon-star"></span>
+      Values <span class="ribbon-star"></span>
+      Integrity <span class="ribbon-star"></span>
+      Collaboration <span class="ribbon-star"></span>
+      Accountability <span class="ribbon-star"></span>
+      Skills sharing <span class="ribbon-star"></span>
+      Zero tolerance to harm <span class="ribbon-star"></span>
+    </span>
+    <span>
+      Mission <span class="ribbon-star"></span>
+      Vision <span class="ribbon-star"></span>
+      Values <span class="ribbon-star"></span>
+      Integrity <span class="ribbon-star"></span>
+      Collaboration <span class="ribbon-star"></span>
+      Accountability <span class="ribbon-star"></span>
+      Skills sharing <span class="ribbon-star"></span>
+      Zero tolerance to harm <span class="ribbon-star"></span>
+    </span>
+  </div>
+</div>
+
+<!-- MVV GRID -->
+<section class="mvv">
+  <div class="wrap">
+    <div class="mvv-grid reveal">
+      <div class="mvv-cell">
+        <div class="corner">№ 01 / Mission</div>
+        <div class="roman">i.</div>
+        <h3>Inspire <em>powerful</em> minds.</h3>
+        <p>To solve challenges by inspiring powerful minds to co-create bold solutions · the kind of solutions that outlast the people who built them.</p>
+      </div>
+      <div class="mvv-cell terra">
+        <div class="corner">№ 02 / Vision</div>
+        <div class="roman">ii.</div>
+        <h3>A <em>recognised</em> global south specialist.</h3>
+        <p>To be recognised as a key Global South provider of strategic consulting for the development and execution of growth strategies across the global south economies · and a specialist in our sectors of expertise.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- INTERLUDE · Field plate -->
+<section style="padding: 60px 0 40px; position: relative;">
+  <div class="wrap">
+    <div style="display:grid; grid-template-columns: 1fr 1.8fr; gap: 56px; align-items: end;">
+      <div>
+        <div class="kicker" style="margin-bottom: 14px; color: var(--terra);">Interlude · Stamp № 02</div>
+        <p style="font-family: var(--serif); font-style: italic; font-size: clamp(24px, 2.8vw, 38px); line-height: 1.15; letter-spacing: -0.01em;">
+          "What a Lab keeps is the <em style="color:var(--terra)">capacity it leaves behind</em>."
+        </p>
+        <div class="mono" style="margin-top: 20px; font-size: 11px; letter-spacing: 0.2em; text-transform: uppercase; opacity: 0.7;">
+          field notes · 2025 · Garissa
+        </div>
+      </div>
+      <div class="img-plate" style="aspect-ratio: 16/9;">
+        <div class="img-handle">PLATE № 02 · CHARTER</div>
+        <svg viewBox="0 0 800 450" preserveAspectRatio="xMidYMid slice" style="position:absolute; inset:0; width:100%; height:100%; z-index:1;" aria-hidden="true">
+          <g fill="none" stroke-width="34" stroke-dasharray="60 30">
+            <path d="M 60 360 Q 220 60 400 240 T 740 100" stroke="#b4432a" opacity="0.9" class="anim-dash-flow"/>
+            <path d="M 60 240 Q 240 380 420 160 T 740 240" stroke="#1d4736" opacity="0.9" class="anim-dash-flow" style="animation-delay: .4s"/>
+            <path d="M 60 100 Q 260 280 440 80 T 740 360" stroke="#c08b3a" opacity="0.8" class="anim-dash-flow" style="animation-delay: .8s"/>
+          </g>
+          <line x1="40" y1="225" x2="760" y2="225" stroke="#1a1612" stroke-width="1" stroke-dasharray="3 8" opacity="0.4"/>
+          <g font-family="JetBrains Mono, monospace" font-size="9" fill="#1a1612" letter-spacing="1.5">
+            <text x="48" y="40">FIG. iii · TRIPLE HELIX</text>
+            <text x="660" y="40">2025 · GSDL</text>
+          </g>
+        </svg>
+        <div class="img-cap">
+          <span class="l">Government · Civil · Private · Academia</span>
+          <span class="r">Method</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- VALUES -->
+<section class="values">
+  <div class="wrap">
+    <div class="values-head">
+      <div class="reveal">
+        <div class="eyebrow" style="margin-bottom:14px;">§ 03 · Values</div>
+        <h2 class="h-section">Three commitments<br/>that <em class="serif italic" style="color:var(--terra)">hold the line.</em></h2>
+      </div>
+      <p class="reveal delay-1">
+        Values aren't decoration. They decide who we work with, how we work, and what we refuse. These are the three we'd defend in any room.
+      </p>
+    </div>
+
+    <div class="value-row reveal">
+      <div class="n">i.</div>
+      <div class="t">Share <em>skills</em><br/>and knowledge.</div>
+      <div class="d">To create <strong>long-lasting, sustainable change.</strong> Capacity is the only currency that compounds · we transfer it deliberately, every engagement, every time.</div>
+    </div>
+    <div class="value-row reveal">
+      <div class="n">ii.</div>
+      <div class="t">Build <em>collaborative</em><br/>partnerships.</div>
+      <div class="d">That promote <strong>innovation, growth and impact.</strong> Triple-helix by default: government, private sector, academia and non-state actors moving together.</div>
+    </div>
+    <div class="value-row reveal">
+      <div class="n">iii.</div>
+      <div class="t">Lead with <em>integrity</em>.</div>
+      <div class="d">Commit to safeguarding and take a <strong>zero-tolerance approach to abuse and harm.</strong> Treat others with respect, as equals. Be open, transparent and accountable in everything we do.</div>
+    </div>
+  </div>
+</section>
+
+<!-- MANIFESTO QUOTE -->
+<section class="manifesto">
+  <div class="wrap">
+    <div class="manifesto-q reveal">
+      We are not <em>here</em> to deliver reports.<br/>
+      We are here to <em>shift</em> the conditions<br/>
+      that produce the problem.
+    </div>
+    <div class="manifesto-sign reveal delay-1">
+      <span>· The GSDL Charter</span>
+      <span>·</span>
+      <span>Ratified MMXXVI</span>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="foot">
+  <div class="foot-inner">
+    <div class="foot-display reveal">
+      Let's <em>co-create</em><br/>
+      what comes next.
+    </div>
+    <div class="foot-grid">
+      <div>
+        <h5>The Lab</h5>
+        <p>Global South Development Lab<br/>strategic consulting for transformational development across the global south.</p>
+        <p style="margin-top:16px; opacity:0.7;">Uganda House, 3rd Floor, Suite 12<br/>Nairobi, Kenya</p>
+      </div>
+      <div>
+        <h5>Sitemap</h5>
+        <a href="/mission">Mission &amp; values</a>
+        <a href="/approach">Our approach</a>
+        <a href="/services">Services</a>
+        <a href="/work">Selected work</a>
+        <a href="/contact">Contact</a>
+      </div>
+      <div>
+        <h5>Practices</h5>
+        <a href="/services#org">Organisational dev</a>
+        <a href="/services#merl">MERL</a>
+        <a href="/services#training">Trainings</a>
+      </div>
+      <div>
+        <h5>Reach us</h5>
+        <a href="mailto:[studio email]">[studio email]</a>
+        <a href="tel:">[Phone number]</a>
+        <a href="/contact">Start a project →</a>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2026 GSDL · All rights reserved</span>
+      <span>Made in Nairobi · For the 17 Goals</span>
+      <span>v.5 · Issue 26</span>
+    </div>
+  </div>
+</footer>
+
+<script type="module" src="/src/main.js"></script>
+</body>
+</html>

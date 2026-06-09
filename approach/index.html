@@ -1,0 +1,373 @@
+<!doctype html>
+<html lang="en" class="loader-active">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Our Approach · Global South Development Lab</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Geist:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/src/style.css" />
+</head>
+<body class="loader-active">
+
+<div class="loader" data-loader>
+  <div class="loader-top">
+    <div class="l"><span class="dot"></span><span>GSDL · Issue №26</span></div>
+    <div class="r"><span>MMXXVI · NAIROBI</span></div>
+  </div>
+  <div class="loader-center">
+    <div class="lr-1"><span>Loading</span></div>
+    <div class="lr-2"><span>the field.</span></div>
+    <div class="lr-3">Paper · Ink · Method · Co-creation</div>
+  </div>
+  <div class="loader-bottom">
+    <div class="l"><span data-loader-meta>Compositing types</span></div>
+    <div class="r">
+      <div class="loader-bar"><div class="fill" data-loader-fill></div></div>
+      <div class="loader-counter"><span data-loader-counter>000</span></div>
+    </div>
+  </div>
+</div>
+<script>
+(function(){
+  var ld=document.querySelector('[data-loader]');
+  var ct=document.querySelector('[data-loader-counter]');
+  var fi=document.querySelector('[data-loader-fill]');
+  var mt=document.querySelector('[data-loader-meta]');
+  if(!ld)return;
+  requestAnimationFrame(function(){ld.classList.add('run');});
+  var ph=['Compositing types','Loading the corridor','Aligning the compass','Inking the plates','Pressing the sheet'];
+  var dur=1700,start=Date.now();
+  function tick(){
+    var e=Date.now()-start,t=Math.min(1,e/dur),s=1-Math.pow(1-t,1.6),n=Math.floor(s*100);
+    if(ct)ct.textContent=String(n).padStart(3,'0');
+    if(fi)fi.style.transform='scaleX('+s+')';
+    var i=Math.min(ph.length-1,Math.floor(s*ph.length));
+    if(mt&&mt.textContent!==ph[i])mt.textContent=ph[i];
+    if(t<1){setTimeout(tick,24);}
+    else{
+      setTimeout(function(){ld.classList.add('done');document.documentElement.classList.remove('loader-active');document.body.classList.remove('loader-active');},360);
+      setTimeout(function(){ld.parentNode&&ld.parentNode.removeChild(ld);},1800);
+    }
+  }
+  setTimeout(tick,60);
+})();
+</script>
+
+<!-- NAV -->
+<nav class="nav">
+  <div class="nav-inner">
+    <a class="brand" href="/">
+      <svg class="brand-mark" viewBox="0 0 32 32" aria-hidden="true">
+        <circle cx="16" cy="16" r="14" fill="none" stroke="#1a1612" stroke-width="1.2"/>
+        <circle cx="16" cy="16" r="6" fill="#b4432a"/>
+        <line x1="16" y1="2" x2="16" y2="30" stroke="#1a1612" stroke-width="1"/>
+        <line x1="2" y1="16" x2="30" y2="16" stroke="#1a1612" stroke-width="1"/>
+      </svg>
+      <span class="brand-name">GSDL<small>Global South Lab</small></span>
+    </a>
+    <div class="nav-links">
+      <a href="/mission">Mission</a>
+      <a href="/approach">Approach</a>
+      <a href="/services">Services</a>
+      <a href="/work">Work</a>
+      <a href="/contact">Contact</a>
+    </div>
+    <a class="nav-cta" href="/contact">Start a project →</a>
+    <button class="nav-toggle" aria-label="Menu"><span></span><span></span></button>
+  </div>
+</nav>
+<div class="nav-drawer">
+  <a href="/mission"><span>Mission</span><span class="num">01</span></a>
+  <a href="/approach"><span>Approach</span><span class="num">02</span></a>
+  <a href="/services"><span>Services</span><span class="num">03</span></a>
+  <a href="/work"><span>Work</span><span class="num">04</span></a>
+  <a href="/contact"><span>Contact</span><span class="num">05</span></a>
+</div>
+
+<!-- PAGE HEAD -->
+<section class="page-head">
+  <div class="back-num parallax" data-parallax="0.18" aria-hidden="true">02</div>
+  <div class="wrap">
+    <div class="crumb reveal">
+      <span class="dot"></span>
+      <span class="mono">Section 02 · How we work</span>
+    </div>
+    <h1 class="head-title reveal">
+      An <em>approach</em><br/>
+      with four<br/>
+      directions.
+    </h1>
+    <p class="reveal delay-1" style="max-width:640px; font-size:19px; line-height:1.6;">
+      We support institutions to be relevant in complex, fast-paced environments. Listen closely. Interrogate the process. Bridge sectors. Arrive at solutions specific to the problem in front of us · and the conditions that led to it.
+    </p>
+  </div>
+</section>
+
+<!-- COMPASS -->
+<section class="compass-section">
+  <div class="wrap">
+    <div class="compass-wrap reveal">
+      <svg class="compass-svg parallax" data-parallax="0.05" viewBox="0 0 800 800" aria-hidden="true">
+        <defs>
+          <pattern id="dots-pat" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
+            <circle cx="2" cy="2" r="1" fill="#1a1612" opacity="0.35"/>
+          </pattern>
+        </defs>
+        <circle cx="400" cy="400" r="380" fill="none" stroke="#1a1612" stroke-width="1"/>
+        <g class="anim-spin-rev" style="transform-origin: 400px 400px;">
+          <circle cx="400" cy="400" r="320" fill="none" stroke="#1a1612" stroke-width="1" stroke-dasharray="2 6"/>
+        </g>
+        <circle cx="400" cy="400" r="260" fill="none" stroke="#1a1612" stroke-width="1"/>
+        <circle cx="400" cy="400" r="180" fill="url(#dots-pat)" />
+        <circle cx="400" cy="400" r="180" fill="none" stroke="#1a1612" stroke-width="1"/>
+        <g class="anim-pulse-slow" style="transform-origin: 400px 400px;">
+          <circle cx="400" cy="400" r="100" fill="#1a1612"/>
+        </g>
+        <circle cx="400" cy="400" r="60" fill="#b4432a"/>
+        <line x1="400" y1="20" x2="400" y2="780" stroke="#1a1612" stroke-width="1"/>
+        <line x1="20" y1="400" x2="780" y2="400" stroke="#1a1612" stroke-width="1"/>
+        <g class="anim-spin-slow" style="transform-origin: 400px 400px; animation-duration: 90s;">
+          <line x1="130" y1="130" x2="670" y2="670" stroke="#1a1612" stroke-width="1" stroke-dasharray="3 8" opacity="0.5"/>
+          <line x1="670" y1="130" x2="130" y2="670" stroke="#1a1612" stroke-width="1" stroke-dasharray="3 8" opacity="0.5"/>
+        </g>
+        <g class="anim-spin" style="transform-origin: 400px 400px; animation-duration: 22s;">
+          <polygon points="400,30 386,80 414,80" fill="#b4432a"/>
+          <polygon points="400,770 386,720 414,720" fill="#1a1612"/>
+        </g>
+        <g transform="translate(400 400)">
+          <circle r="240" fill="none" stroke="#1a1612" stroke-width="0.5" opacity="0.5"/>
+          <g stroke="#1a1612" stroke-width="0.5" opacity="0.4">
+            <line x1="-240" y1="0" x2="-220" y2="0"/>
+            <line x1="240" y1="0" x2="220" y2="0"/>
+            <line x1="0" y1="-240" x2="0" y2="-220"/>
+            <line x1="0" y1="240" x2="0" y2="220"/>
+          </g>
+        </g>
+        <g class="anim-spin" style="transform-origin: 400px 400px; animation-duration: 30s;">
+          <circle cx="400" cy="120" r="10" fill="#1d4736"/>
+          <circle cx="400" cy="120" r="4" fill="#efe7d6"/>
+        </g>
+        <g class="anim-spin-rev" style="transform-origin: 400px 400px; animation-duration: 55s;">
+          <circle cx="720" cy="400" r="6" fill="#c08b3a"/>
+        </g>
+      </svg>
+      <div class="compass-tag terra n">01 · Make meaning</div>
+      <div class="compass-tag e">02 · Collective intelligence</div>
+      <div class="compass-tag s">03 · Portfolio approach</div>
+      <div class="compass-tag w">04 · Solutions mapping</div>
+      <div class="compass-center" style="color:var(--bone);">
+        Co-design<br/>
+        <em>co-create</em><br/>
+        co-execute
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PILLAR 01 · Make meaning -->
+<section class="pillar-long" id="make-meaning">
+  <div class="wrap">
+    <div class="pl-inner">
+      <div class="pl-left reveal">
+        <div class="label">Pillar 01</div>
+        <div class="pl-num">01</div>
+        <h2>Make<br/><em>meaning</em></h2>
+      </div>
+      <div class="pl-right reveal delay-1">
+        <p class="lead">Support institutions to be relevant in complex and fast-paced environments.</p>
+        <p>We listen closely, interrogate the process, and bridge sectors to arrive at the best solutions to specific problems · and to the broader conditions that led to those problems.</p>
+        <ul>
+          <li><span class="k">i.</span><span>Listen first, frame second, prescribe last.</span></li>
+          <li><span class="k">ii.</span><span>Interrogate process · not just outcomes.</span></li>
+          <li><span class="k">iii.</span><span>Bridge sectors so insights cross silos.</span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PILLAR 02 · Collective intelligence -->
+<section class="pillar-long terra" id="collective-intelligence">
+  <div class="wrap">
+    <div class="pl-inner">
+      <div class="pl-left reveal">
+        <div class="label">Pillar 02</div>
+        <div class="pl-num">02</div>
+        <h2>Collective<br/><em>intelligence</em></h2>
+      </div>
+      <div class="pl-right reveal delay-1">
+        <p class="lead">Keep the finger on the pulse · together. What's happening on the ground and what futures are possible.</p>
+        <p>We strive to identify new strategies for understanding challenges as they unfold; co-create new approaches to identifying solutions; and address not just the problem in front of us but the broader environment.</p>
+        <ul>
+          <li><span class="k">i.</span><span>Read the ground continuously.</span></li>
+          <li><span class="k">ii.</span><span>Co-create · never prescribe.</span></li>
+          <li><span class="k">iii.</span><span>Hold problem + environment in one frame.</span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- INTERLUDE · Field plate -->
+<section style="padding: 80px 0 60px; position: relative; background: var(--paper);">
+  <div class="wrap">
+    <div style="display:grid; grid-template-columns: 1.7fr 1fr; gap: 56px; align-items: stretch;">
+      <div class="img-plate" style="aspect-ratio: 16/10;">
+        <div class="img-handle">PLATE № 03 · COMPASS</div>
+        <svg viewBox="0 0 800 500" preserveAspectRatio="xMidYMid slice" style="position:absolute; inset:0; width:100%; height:100%; z-index:1;" aria-hidden="true">
+          <g transform="translate(400 250)">
+            <circle r="230" fill="none" stroke="#1a1612" stroke-width="1"/>
+            <g class="anim-spin-rev" style="transform-origin: 0 0;">
+              <circle r="180" fill="none" stroke="#1a1612" stroke-width="1" stroke-dasharray="2 6"/>
+            </g>
+            <g class="anim-pulse-slow" style="transform-origin: 0 0;">
+              <circle r="120" fill="#b4432a" opacity="0.92"/>
+            </g>
+            <circle r="120" fill="none" stroke="#1a1612" stroke-width="1"/>
+            <circle r="60" fill="#1d4736"/>
+            <circle r="22" fill="#efe7d6"/>
+            <line x1="-260" y1="0" x2="260" y2="0" stroke="#1a1612" stroke-width="1"/>
+            <line x1="0" y1="-260" x2="0" y2="260" stroke="#1a1612" stroke-width="1"/>
+            <g stroke="#1a1612" stroke-width="1">
+              <line x1="0" y1="-230" x2="0" y2="-210"/>
+              <line x1="0" y1="230" x2="0" y2="210"/>
+              <line x1="-230" y1="0" x2="-210" y2="0"/>
+              <line x1="230" y1="0" x2="210" y2="0"/>
+            </g>
+            <g class="anim-spin" style="transform-origin: 0 0; animation-duration: 20s;">
+              <polygon points="0,-240 -10,-210 10,-210" fill="#1a1612"/>
+            </g>
+          </g>
+          <g font-family="JetBrains Mono, monospace" font-size="10" fill="#1a1612" letter-spacing="1.5">
+            <text x="48" y="40">FIG. iv · METHOD COMPASS</text>
+            <text x="640" y="40">N · 01°17′S</text>
+          </g>
+        </svg>
+        <div class="img-cap">
+          <span class="l">North · Method</span>
+          <span class="r">Plate iii</span>
+        </div>
+      </div>
+      <div style="display: flex; flex-direction: column; justify-content: end; gap: 18px;">
+        <div class="kicker" style="color: var(--terra);">Interlude · iii</div>
+        <p style="font-family: var(--serif); font-size: clamp(24px, 2.6vw, 36px); line-height: 1.15; letter-spacing: -0.012em;">
+          The compass is not a metaphor. <em style="color: var(--terra); font-style: italic;">It is a checklist</em> · for every engagement, in every season.
+        </p>
+        <div class="mono" style="font-size: 11px; letter-spacing: 0.2em; text-transform: uppercase; opacity: 0.7;">
+          from the working notebook
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PILLAR 03 · Portfolio approach -->
+<section class="pillar-long alt" id="portfolio-approach">
+  <div class="wrap">
+    <div class="pl-inner">
+      <div class="pl-left reveal">
+        <div class="label">Pillar 03</div>
+        <div class="pl-num">03</div>
+        <h2>Portfolio<br/><em>approach</em></h2>
+      </div>
+      <div class="pl-right reveal delay-1">
+        <p class="lead">Co-design, co-create, co-execute. We catalyse potential partnerships and connect opportunities.</p>
+        <p>Different players move together towards common goals. We employ the <em>triple-helix approach</em> · working with government, the private sector, academia and non-state actors.</p>
+        <ul>
+          <li><span class="k">i.</span><span>Government · policy &amp; enabling environment.</span></li>
+          <li><span class="k">ii.</span><span>Private sector · capital, scale, distribution.</span></li>
+          <li><span class="k">iii.</span><span>Academia · evidence and method.</span></li>
+          <li><span class="k">iv.</span><span>Non-state actors · voice and reach.</span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PILLAR 04 · Solutions mapping -->
+<section class="pillar-long dark" id="solutions-mapping">
+  <div class="wrap">
+    <div class="pl-inner">
+      <div class="pl-left reveal">
+        <div class="label" style="opacity:0.65;">Pillar 04</div>
+        <div class="pl-num">04</div>
+        <h2>Solutions<br/><em>mapping</em></h2>
+      </div>
+      <div class="pl-right reveal delay-1">
+        <p class="lead">Branch out together · to explore solutions to the context challenge.</p>
+        <p>Mapping is how we move from many possibilities to a few catalytic commitments. We test, prune, and converge · together with the people who'll live with the outcome.</p>
+        <ul>
+          <li><span class="k">i.</span><span>Diverge widely, converge deliberately.</span></li>
+          <li><span class="k">ii.</span><span>Surface the trade-offs in plain language.</span></li>
+          <li><span class="k">iii.</span><span>Commit to the most catalytic path.</span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Ribbon -->
+<div class="ribbon" aria-hidden="true">
+  <div class="ribbon-track">
+    <span>
+      Make meaning <span class="ribbon-star"></span>
+      Collective intelligence <span class="ribbon-star"></span>
+      Portfolio approach <span class="ribbon-star"></span>
+      Solutions mapping <span class="ribbon-star"></span>
+    </span>
+    <span>
+      Make meaning <span class="ribbon-star"></span>
+      Collective intelligence <span class="ribbon-star"></span>
+      Portfolio approach <span class="ribbon-star"></span>
+      Solutions mapping <span class="ribbon-star"></span>
+    </span>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer class="foot">
+  <div class="foot-inner">
+    <div class="foot-display reveal">
+      Let's <em>co-create</em><br/>
+      what comes next.
+    </div>
+    <div class="foot-grid">
+      <div>
+        <h5>The Lab</h5>
+        <p>Global South Development Lab<br/>strategic consulting for transformational development across the global south.</p>
+        <p style="margin-top:16px; opacity:0.7;">Uganda House, 3rd Floor, Suite 12<br/>Nairobi, Kenya</p>
+      </div>
+      <div>
+        <h5>Sitemap</h5>
+        <a href="/mission">Mission &amp; values</a>
+        <a href="/approach">Our approach</a>
+        <a href="/services">Services</a>
+        <a href="/work">Selected work</a>
+        <a href="/contact">Contact</a>
+      </div>
+      <div>
+        <h5>Practices</h5>
+        <a href="/services#org">Organisational dev</a>
+        <a href="/services#merl">MERL</a>
+        <a href="/services#training">Trainings</a>
+      </div>
+      <div>
+        <h5>Reach us</h5>
+        <a href="mailto:[studio email]">[studio email]</a>
+        <a href="tel:">[Phone number]</a>
+        <a href="/contact">Start a project →</a>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2026 GSDL · All rights reserved</span>
+      <span>Made in Nairobi · For the 17 Goals</span>
+      <span>v.5 · Issue 26</span>
+    </div>
+  </div>
+</footer>
+
+<script type="module" src="/src/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,416 @@
+<!doctype html>
+<html lang="en" class="loader-active">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Selected Work · Global South Development Lab</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Geist:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/src/style.css" />
+</head>
+<body class="loader-active">
+
+<div class="loader" data-loader>
+  <div class="loader-top">
+    <div class="l"><span class="dot"></span><span>GSDL · Issue №26</span></div>
+    <div class="r"><span>MMXXVI · NAIROBI</span></div>
+  </div>
+  <div class="loader-center">
+    <div class="lr-1"><span>Loading</span></div>
+    <div class="lr-2"><span>the field.</span></div>
+    <div class="lr-3">Paper · Ink · Method · Co-creation</div>
+  </div>
+  <div class="loader-bottom">
+    <div class="l"><span data-loader-meta>Compositing types</span></div>
+    <div class="r">
+      <div class="loader-bar"><div class="fill" data-loader-fill></div></div>
+      <div class="loader-counter"><span data-loader-counter>000</span></div>
+    </div>
+  </div>
+</div>
+<script>
+(function(){
+  var ld=document.querySelector('[data-loader]');
+  var ct=document.querySelector('[data-loader-counter]');
+  var fi=document.querySelector('[data-loader-fill]');
+  var mt=document.querySelector('[data-loader-meta]');
+  if(!ld)return;
+  requestAnimationFrame(function(){ld.classList.add('run');});
+  var ph=['Compositing types','Loading the corridor','Aligning the compass','Inking the plates','Pressing the sheet'];
+  var dur=1700,start=Date.now();
+  function tick(){
+    var e=Date.now()-start,t=Math.min(1,e/dur),s=1-Math.pow(1-t,1.6),n=Math.floor(s*100);
+    if(ct)ct.textContent=String(n).padStart(3,'0');
+    if(fi)fi.style.transform='scaleX('+s+')';
+    var i=Math.min(ph.length-1,Math.floor(s*ph.length));
+    if(mt&&mt.textContent!==ph[i])mt.textContent=ph[i];
+    if(t<1){setTimeout(tick,24);}
+    else{
+      setTimeout(function(){ld.classList.add('done');document.documentElement.classList.remove('loader-active');document.body.classList.remove('loader-active');},360);
+      setTimeout(function(){ld.parentNode&&ld.parentNode.removeChild(ld);},1800);
+    }
+  }
+  setTimeout(tick,60);
+})();
+</script>
+
+<!-- NAV -->
+<nav class="nav">
+  <div class="nav-inner">
+    <a class="brand" href="/">
+      <svg class="brand-mark" viewBox="0 0 32 32" aria-hidden="true">
+        <circle cx="16" cy="16" r="14" fill="none" stroke="#1a1612" stroke-width="1.2"/>
+        <circle cx="16" cy="16" r="6" fill="#b4432a"/>
+        <line x1="16" y1="2" x2="16" y2="30" stroke="#1a1612" stroke-width="1"/>
+        <line x1="2" y1="16" x2="30" y2="16" stroke="#1a1612" stroke-width="1"/>
+      </svg>
+      <span class="brand-name">GSDL<small>Global South Lab</small></span>
+    </a>
+    <div class="nav-links">
+      <a href="/mission">Mission</a>
+      <a href="/approach">Approach</a>
+      <a href="/services">Services</a>
+      <a href="/work">Work</a>
+      <a href="/contact">Contact</a>
+    </div>
+    <a class="nav-cta" href="/contact">Start a project →</a>
+    <button class="nav-toggle" aria-label="Menu"><span></span><span></span></button>
+  </div>
+</nav>
+<div class="nav-drawer">
+  <a href="/mission"><span>Mission</span><span class="num">01</span></a>
+  <a href="/approach"><span>Approach</span><span class="num">02</span></a>
+  <a href="/services"><span>Services</span><span class="num">03</span></a>
+  <a href="/work"><span>Work</span><span class="num">04</span></a>
+  <a href="/contact"><span>Contact</span><span class="num">05</span></a>
+</div>
+
+<!-- PAGE HEAD -->
+<section class="page-head">
+  <div class="back-num parallax" data-parallax="0.18" aria-hidden="true">04</div>
+  <div class="wrap">
+    <div class="crumb reveal">
+      <span class="dot"></span>
+      <span class="mono">Section 04 · Selected work · 2021–2026</span>
+    </div>
+    <h1 class="head-title reveal">
+      Where the<br/>
+      <em>work</em> has lived.
+    </h1>
+    <p class="reveal delay-1" style="max-width:680px; font-size:19px; line-height:1.6;">
+      A short index of recent engagements · gender and inclusion studies, costed plans, capacity assessments, incubations · across Kenya and the wider East African corridor.
+    </p>
+
+    <div class="filter-row reveal delay-2" aria-hidden="true">
+      <span class="lbl">Filter</span>
+      <span class="pill active">All</span>
+      <span class="pill">Gender &amp; Inclusion</span>
+      <span class="pill">MERL</span>
+      <span class="pill">Capacity</span>
+      <span class="pill">Incubation</span>
+      <span class="pill">Policy</span>
+    </div>
+  </div>
+</section>
+
+<!-- FEATURED -->
+<section class="feat reveal">
+  <div class="feat-inner" style="grid-template-columns: 320px 1.4fr 1fr;">
+    <div class="img-plate" style="aspect-ratio: 4/5; background: var(--terra-d); border-color: var(--bone);">
+      <div class="img-handle">PLATE № 04</div>
+      <svg viewBox="0 0 320 400" style="position:absolute; inset:0; width:100%; height:100%; z-index:1;" aria-hidden="true">
+        <rect width="320" height="400" fill="#8a2f1c"/>
+        <g opacity="0.85">
+          <rect x="0" y="280" width="320" height="40" fill="#1d4736"/>
+          <rect x="0" y="320" width="320" height="36" fill="#c08b3a"/>
+          <rect x="0" y="356" width="320" height="44" fill="#1a1612"/>
+        </g>
+        <g class="anim-spin" style="transform-origin: 240px 120px; animation-duration: 28s;">
+          <circle cx="240" cy="120" r="60" fill="#c08b3a"/>
+          <circle cx="240" cy="120" r="60" fill="none" stroke="#efe7d6" stroke-width="1"/>
+        </g>
+        <g class="anim-pulse-slow" style="transform-origin: 240px 120px;">
+          <circle cx="240" cy="120" r="40" fill="#efe7d6"/>
+        </g>
+        <path d="M0,280 Q60,210 120,250 T240,240 T320,260 L320,280 Z" fill="#1a1612" opacity="0.55"/>
+        <g stroke="#efe7d6" stroke-width="1.2" opacity="0.9">
+          <line x1="14" y1="14" x2="34" y2="14"/><line x1="14" y1="14" x2="14" y2="34"/>
+          <line x1="306" y1="14" x2="286" y2="14"/><line x1="306" y1="14" x2="306" y2="34"/>
+        </g>
+        <text x="20" y="56" font-family="JetBrains Mono, monospace" font-size="9" fill="#efe7d6" letter-spacing="1.5">FIG. 02 · VALUE CHAIN</text>
+      </svg>
+      <div class="img-cap">
+        <span class="l">SNV · 2021</span>
+        <span class="r">Field study</span>
+      </div>
+    </div>
+    <div>
+      <div class="kicker" style="color:var(--ochre); margin-bottom:16px;">Featured engagement · 2021</div>
+      <h3>A gender &amp; social <em>inclusion study</em> across three counties.</h3>
+      <p>Investigating attitudes, norms and policy in the fodder/forage value chain across Narok, Kajiado and Taita Taveta · and how women and youth participation can be maximised at the level of individual, family, community and structure.</p>
+    </div>
+    <div class="feat-meta">
+      <div class="row">
+        <div class="k">Partner</div>
+        <div class="v">SNV</div>
+      </div>
+      <div class="row">
+        <div class="k">Geography</div>
+        <div class="v">Narok · Kajiado · Taita Taveta</div>
+      </div>
+      <div class="row">
+        <div class="k">Sectors</div>
+        <div class="v">Livestock · Gender · Policy</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- HORIZONTAL SCROLL PORTFOLIO -->
+<section class="hscroll">
+  <div class="hscroll-pin">
+
+    <div class="hscroll-head">
+      <div>
+        <div class="eyebrow">§ Portfolio · selected engagements</div>
+        <h2>Four<br/><em>engagements.</em></h2>
+      </div>
+      <div class="progress">
+        <div class="pgnum"><em data-hscroll-num>01</em>&thinsp;/&thinsp;<span data-hscroll-total>04</span></div>
+        <div class="pgbar"><i data-hscroll-bar></i></div>
+      </div>
+    </div>
+
+    <div class="hscroll-track">
+
+      <!-- Card 01 · SNV -->
+      <div class="hscroll-card">
+        <div class="num">№ 01 · SNV · 2021</div>
+        <div class="plate">
+          <svg viewBox="0 0 440 560" aria-hidden="true">
+            <rect width="440" height="560" fill="#8a2f1c"/>
+            <rect x="0" y="380" width="440" height="56" fill="#1d4736"/>
+            <rect x="0" y="436" width="440" height="48" fill="#c08b3a"/>
+            <rect x="0" y="484" width="440" height="76" fill="#1a1612"/>
+            <circle cx="310" cy="160" r="90" fill="#c08b3a" opacity="0.9"/>
+            <circle cx="310" cy="160" r="90" fill="none" stroke="#efe7d6" stroke-width="1.5"/>
+            <circle cx="310" cy="160" r="56" fill="#efe7d6"/>
+            <path d="M0,380 Q80,300 160,340 T320,330 T440,350 L440,380 Z" fill="#1a1612" opacity="0.5"/>
+            <line x1="20" y1="20" x2="50" y2="20" stroke="#efe7d6" stroke-width="1.2"/><line x1="20" y1="20" x2="20" y2="50" stroke="#efe7d6" stroke-width="1.2"/>
+            <line x1="420" y1="20" x2="390" y2="20" stroke="#efe7d6" stroke-width="1.2"/><line x1="420" y1="20" x2="420" y2="50" stroke="#efe7d6" stroke-width="1.2"/>
+            <text x="24" y="76" font-family="JetBrains Mono, monospace" font-size="9" fill="#efe7d6" letter-spacing="1.5">FIG. 01 · GENDER &amp; VALUE CHAIN</text>
+          </svg>
+          <div class="plate-cap">Narok · Kajiado · Taita Taveta</div>
+        </div>
+        <div class="body">
+          <div>
+            <div class="ix">Gender &amp; Inclusion · Livestock · Policy</div>
+            <h3>Gender &amp; Social Inclusion study · <em>fodder/forage</em> value chain.</h3>
+            <p>Establishing the status of gender and youth engagement in the fodder/forage value chain across Narok, Kajiado and Taita Taveta counties · including attitudes, norms and policy dialogue.</p>
+          </div>
+          <div class="meta">
+            <div class="row"><span>Partner</span><b>SNV</b></div>
+            <div class="row"><span>Year</span><b>2021</b></div>
+            <div class="row"><span>Geography</span><b>3 counties, Kenya</b></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 02 · WOKIKE -->
+      <div class="hscroll-card">
+        <div class="num">№ 02 · WOKIKE · 2021</div>
+        <div class="plate">
+          <svg viewBox="0 0 440 560" aria-hidden="true">
+            <rect width="440" height="560" fill="#1d4736"/>
+            <rect x="0" y="0" width="440" height="8" fill="#b4432a"/>
+            <circle cx="220" cy="200" r="110" fill="none" stroke="#efe7d6" stroke-width="1.2" stroke-dasharray="6 4"/>
+            <circle cx="220" cy="200" r="70" fill="none" stroke="#c08b3a" stroke-width="1.5"/>
+            <circle cx="220" cy="200" r="36" fill="#efe7d6"/>
+            <rect x="60" y="360" width="320" height="1" fill="#efe7d6" opacity="0.4"/>
+            <rect x="60" y="400" width="320" height="1" fill="#efe7d6" opacity="0.4"/>
+            <rect x="60" y="440" width="320" height="1" fill="#efe7d6" opacity="0.4"/>
+            <line x1="20" y1="20" x2="50" y2="20" stroke="#efe7d6" stroke-width="1.2"/><line x1="20" y1="20" x2="20" y2="50" stroke="#efe7d6" stroke-width="1.2"/>
+            <line x1="420" y1="20" x2="390" y2="20" stroke="#efe7d6" stroke-width="1.2"/><line x1="420" y1="20" x2="420" y2="50" stroke="#efe7d6" stroke-width="1.2"/>
+            <text x="24" y="76" font-family="JetBrains Mono, monospace" font-size="9" fill="#efe7d6" letter-spacing="1.5">FIG. 02 · COSTED ACTION PLAN</text>
+          </svg>
+          <div class="plate-cap">Garissa · Tana River · Wajir</div>
+        </div>
+        <div class="body">
+          <div>
+            <div class="ix">Gender &amp; Inclusion · Policy · MERL</div>
+            <h3>County-specific <em>costed action plans</em> for ending FGM.</h3>
+            <p>With Womankind Kenya, developing county-specific costed action plans for Garissa, Tana River and Wajir · scaling multisectoral efforts to end Female Genital Mutilation.</p>
+          </div>
+          <div class="meta">
+            <div class="row"><span>Partner</span><b>WOKIKE / Womankind</b></div>
+            <div class="row"><span>Year</span><b>2021</b></div>
+            <div class="row"><span>Geography</span><b>3 counties, Kenya</b></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 03 · Malteser -->
+      <div class="hscroll-card">
+        <div class="num">№ 03 · Malteser · 2021</div>
+        <div class="plate">
+          <svg viewBox="0 0 440 560" aria-hidden="true">
+            <rect width="440" height="560" fill="#2c2620"/>
+            <rect x="40" y="100" width="360" height="1" fill="#c08b3a" opacity="0.7"/>
+            <rect x="40" y="200" width="360" height="1" fill="#c08b3a" opacity="0.5"/>
+            <rect x="40" y="300" width="360" height="1" fill="#c08b3a" opacity="0.3"/>
+            <rect x="140" y="80" width="1" height="400" fill="#efe7d6" opacity="0.2"/>
+            <rect x="300" y="80" width="1" height="400" fill="#efe7d6" opacity="0.2"/>
+            <polygon points="220,130 280,230 220,330 160,230" fill="none" stroke="#b4432a" stroke-width="2"/>
+            <circle cx="220" cy="230" r="24" fill="#b4432a"/>
+            <circle cx="220" cy="230" r="10" fill="#efe7d6"/>
+            <line x1="20" y1="20" x2="50" y2="20" stroke="#efe7d6" stroke-width="1.2"/><line x1="20" y1="20" x2="20" y2="50" stroke="#efe7d6" stroke-width="1.2"/>
+            <line x1="420" y1="20" x2="390" y2="20" stroke="#efe7d6" stroke-width="1.2"/><line x1="420" y1="20" x2="420" y2="50" stroke="#efe7d6" stroke-width="1.2"/>
+            <text x="24" y="76" font-family="JetBrains Mono, monospace" font-size="9" fill="#efe7d6" letter-spacing="1.5">FIG. 03 · ORG CAPACITY</text>
+          </svg>
+          <div class="plate-cap">Kenya · Nationwide</div>
+        </div>
+        <div class="body">
+          <div>
+            <div class="ix">Capacity · Health · OCA</div>
+            <h3><em>Organisational capacity assessment</em> for Kenya Council of EMTs.</h3>
+            <p>An OCA to identify areas for organisational improvement and sustainable results · followed by OD and systems-strengthening training for KCEMT staff and leadership.</p>
+          </div>
+          <div class="meta">
+            <div class="row"><span>Partner</span><b>Malteser International</b></div>
+            <div class="row"><span>Year</span><b>2021</b></div>
+            <div class="row"><span>Geography</span><b>Kenya, nationwide</b></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 04 · ASI -->
+      <div class="hscroll-card">
+        <div class="num">№ 04 · ASI · 2022</div>
+        <div class="plate">
+          <svg viewBox="0 0 440 560" aria-hidden="true">
+            <rect width="440" height="560" fill="#c08b3a"/>
+            <circle cx="220" cy="220" r="130" fill="none" stroke="#1a1612" stroke-width="1.5"/>
+            <circle cx="220" cy="220" r="86" fill="none" stroke="#1a1612" stroke-width="1" stroke-dasharray="4 4"/>
+            <circle cx="220" cy="220" r="48" fill="#1a1612"/>
+            <line x1="220" y1="90" x2="220" y2="350" stroke="#1a1612" stroke-width="1.2" opacity="0.5"/>
+            <line x1="90" y1="220" x2="350" y2="220" stroke="#1a1612" stroke-width="1.2" opacity="0.5"/>
+            <rect x="0" y="420" width="440" height="140" fill="#1a1612"/>
+            <line x1="20" y1="20" x2="50" y2="20" stroke="#1a1612" stroke-width="1.2"/><line x1="20" y1="20" x2="20" y2="50" stroke="#1a1612" stroke-width="1.2"/>
+            <line x1="420" y1="20" x2="390" y2="20" stroke="#1a1612" stroke-width="1.2"/><line x1="420" y1="20" x2="420" y2="50" stroke="#1a1612" stroke-width="1.2"/>
+            <text x="24" y="76" font-family="JetBrains Mono, monospace" font-size="9" fill="#1a1612" letter-spacing="1.5">FIG. 04 · INCUBATION</text>
+          </svg>
+          <div class="plate-cap">East Africa</div>
+        </div>
+        <div class="body">
+          <div>
+            <div class="ix">Incubation · Youth · Innovation</div>
+            <h3><em>Incubation &amp; advisory</em> services for youth innovations.</h3>
+            <p>Consultancy for Action for Sustainability Initiative · incubation and advisory support for youth innovations across the portfolio, with mentor matching and curriculum design.</p>
+          </div>
+          <div class="meta">
+            <div class="row"><span>Partner</span><b>ASI</b></div>
+            <div class="row"><span>Year</span><b>2022</b></div>
+            <div class="row"><span>Geography</span><b>East Africa</b></div>
+          </div>
+        </div>
+      </div>
+
+    </div><!-- /hscroll-track -->
+
+    <div class="hscroll-foot">
+      <span>§ Selected engagements · 2021–2026</span>
+      <div class="scrubhint">
+        <span>Scroll to advance</span>
+        <span class="arr">→</span>
+      </div>
+    </div>
+
+  </div><!-- /hscroll-pin -->
+</section>
+
+<!-- SECTORS -->
+<section class="sectors">
+  <div class="wrap">
+    <div class="sectors-head">
+      <div class="reveal">
+        <div class="eyebrow" style="margin-bottom:14px;">§ Index · sectors</div>
+        <h2 class="h-section">Where we<br/><em class="serif italic" style="color:var(--terra)">show up.</em></h2>
+      </div>
+      <p class="reveal delay-1">Across sectors and geographies, the practice stays the same: listen, co-create, document, iterate. The labels below shift between engagements · the method does not.</p>
+    </div>
+
+    <div class="reveal delay-2">
+      <div class="sector-row"><span><em>Gender</em> &amp; social inclusion</span><span class="c">04 engagements</span></div>
+      <div class="sector-row"><span>Livestock &amp; <em>value chains</em></span><span class="c">02 engagements</span></div>
+      <div class="sector-row"><span><em>Health</em> &amp; systems</span><span class="c">02 engagements</span></div>
+      <div class="sector-row"><span>Youth &amp; <em>innovation</em></span><span class="c">02 engagements</span></div>
+      <div class="sector-row"><span><em>Policy</em> &amp; governance</span><span class="c">03 engagements</span></div>
+      <div class="sector-row"><span>Monitoring, Evaluation &amp; <em>Research</em></span><span class="c">05 engagements</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- Ribbon -->
+<div class="ribbon" aria-hidden="true">
+  <div class="ribbon-track">
+    <span>
+      Selected work <span class="ribbon-star"></span>
+      2021–2026 <span class="ribbon-star"></span>
+      Kenya · Tana River · Wajir · Narok · Kajiado · Garissa · Taita Taveta
+      <span class="ribbon-star"></span>
+    </span>
+    <span>
+      Selected work <span class="ribbon-star"></span>
+      2021–2026 <span class="ribbon-star"></span>
+      Kenya · Tana River · Wajir · Narok · Kajiado · Garissa · Taita Taveta
+      <span class="ribbon-star"></span>
+    </span>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer class="foot">
+  <div class="foot-inner">
+    <div class="foot-display reveal">
+      Let's <em>co-create</em><br/>
+      what comes next.
+    </div>
+    <div class="foot-grid">
+      <div>
+        <h5>The Lab</h5>
+        <p>Global South Development Lab<br/>strategic consulting for transformational development across the global south.</p>
+        <p style="margin-top:16px; opacity:0.7;">Uganda House, 3rd Floor, Suite 12<br/>Nairobi, Kenya</p>
+      </div>
+      <div>
+        <h5>Sitemap</h5>
+        <a href="/mission">Mission &amp; values</a>
+        <a href="/approach">Our approach</a>
+        <a href="/services">Services</a>
+        <a href="/work">Selected work</a>
+        <a href="/contact">Contact</a>
+      </div>
+      <div>
+        <h5>Practices</h5>
+        <a href="/services#org">Organisational dev</a>
+        <a href="/services#merl">MERL</a>
+        <a href="/services#training">Trainings</a>
+      </div>
+      <div>
+        <h5>Reach us</h5>
+        <a href="mailto:[studio email]">[studio email]</a>
+        <a href="tel:">[Phone number]</a>
+        <a href="/contact">Start a project →</a>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2026 GSDL · All rights reserved</span>
+      <span>Made in Nairobi · For the 17 Goals</span>
+      <span>v.5 · Issue 26</span>
+    </div>
+  </div>
+</footer>
+
+<script type="module" src="/src/main.js"></script>
+</body>
+</html>
